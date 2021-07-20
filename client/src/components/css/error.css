@@ -1,0 +1,16 @@
+.error{
+    background: url('../assets/bgs/bg1.jpg');
+    height: 100vh;
+    min-height: fit-content;
+    width:98.7vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .error-body{
+    background-color: #aad2ae7c;
+}
+
+.home-link{
+  text-decoration: none !important;
+}

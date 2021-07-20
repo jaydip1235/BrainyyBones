@@ -1,0 +1,12 @@
+.register{
+    background: url('../assets/bgs/bg1.jpg');
+    height: 100vh;
+    min-height: fit-content !important;
+    width:100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .form-body{
+      background-color: #aad2ae7c;
+  }
