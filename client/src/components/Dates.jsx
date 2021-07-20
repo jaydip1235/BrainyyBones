@@ -109,10 +109,10 @@ function Dates() {
             onChange={(e) => {
               setIssue(e.target.value);
             }}
-            className="form-select form-select-lg mb-3  p-2 m-2"
+            className="form-select form-select-lg mb-3  p-2 m-2 issues"
             aria-label=".form-select-lg example"
           >
-            <option value="" selected disabled hidden>
+            <option  value="" selected disabled hidden>
               What kind of issue you are facing?
             </option>
             <option value="Relationship issues">Relationship issues</option>

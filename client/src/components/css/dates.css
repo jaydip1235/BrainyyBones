@@ -24,3 +24,9 @@
 .hello{
     overflow-y: hidden !important
 }
+
+@media only screen and (max-width: 600px){
+  .issues{
+      font-size:0.9rem !important
+  }
+}

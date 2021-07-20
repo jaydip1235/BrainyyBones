@@ -27,7 +27,7 @@ exports.register = async (req, res, next) => {
                 <p style="font-size:20px">Thank you for choosing Brainy Ears. This email is a confirmation of your Active Listening session with a Brainy Ears Volunteer. Your session booked at ${user.time.substring(0,8)} on ${user.date} for 15 minutes. See you at the session.</p>
                 <br>
                 <h2>Regards,</h2>
-                <h2>Team BrainyyBones</h2>
+                <h2>Team BrainyBones</h2>
               `
               });
             }catch(err){
