@@ -33,11 +33,11 @@ exports.register = async (req, res, next) => {
               `
               });
             }catch(err){
-              res.redirect("https://brainyears.herokuapp.com/error")
+              res.status(404).send("fail")
             }
             res.send(user)
   } catch (error) {
-    res.redirect("https://brainyears.herokuapp.com/error")
+    res.status(404).send("fail")
   }
 }
 
