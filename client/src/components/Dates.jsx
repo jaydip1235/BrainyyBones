@@ -47,6 +47,7 @@ function Dates() {
         })
         .then((response) =>{
           if(response.status==404){
+            
             history.push('/error')
           }
           else{
