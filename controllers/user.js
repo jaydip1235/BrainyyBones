@@ -11,6 +11,7 @@ exports.register = async (req, res, next) => {
       res.redirect("https://brainyears.herokuapp.com/error")
     }
     const user = await User.create({
+      
       name: req.body.name,
       email: req.body.email,
       phone: req.body.phone,
