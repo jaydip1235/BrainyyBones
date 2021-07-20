@@ -8,7 +8,7 @@ function Nav() {
     return (
         <div>
             {
-                window.location.href!="http://localhost:3000/"?
+                window.location.href!="https://brainyears.herokuapp.com/"?
                     <React.Fragment>
                     <nav className="navbar fixed-top navbar-expand-lg navbar-light">
                         <div className="container-fluid">

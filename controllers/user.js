@@ -28,11 +28,11 @@ exports.register = async (req, res, next) => {
               `
               });
             }catch(err){
-              res.redirect("https://localhost:3000/error")
+              res.redirect("https://brainyears.herokuapp.com/error")
             }
             res.send(user)
   } catch (error) {
-    res.redirect("https://localhost:3000/error")
+    res.redirect("https://brainyears.herokuapp.com/error")
   }
 }
 
