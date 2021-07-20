@@ -3,9 +3,11 @@
     height: 100vh;
     min-height: fit-content !important;
     width:100vw;
+    max-height: 150vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden !important;
   }
   .form-body{
       background-color: #aad2ae7c;

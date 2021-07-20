@@ -67,7 +67,7 @@ export default function Time(props) {
 
     return (
         <div className={`${classes.root} time-tab`}>
-            <AppBar position="static" color="default">
+            <AppBar position="sticky" color="default">
                 <Tabs
                     value={value}
                     onChange={handleChange}

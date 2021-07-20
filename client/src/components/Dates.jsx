@@ -95,8 +95,8 @@ function Dates() {
   return (
     <>
       <Nav />
-      <div className="register d-flex align-items-center justify-content-center date-bg" >
-        <div className="col-lg-6 form-body p-5 mt-4 text-success date-body" data-aos={"fade-up"}>
+      <div className="register hello d-flex align-items-center justify-content-center date-bg " >
+        <div className="col-lg-6 form-body p-5  text-success date-body " data-aos={"fade-up"}>
           <h1 className="display-3 text-center text-success pb-4">
             <strong>Select Date and Time</strong>
           </h1>
