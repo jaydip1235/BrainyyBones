@@ -45,7 +45,7 @@ function Home() {
             <div className="comp1 mt-5 d-flex flex-wrap" data-aos={"fade-left"}>
                 <div className="card1 text-start col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center"  style={{ height: "40vh" }} onClick={()=>{console.log("Card1")}}>
                     <div className="h3 text-success mb-4 mx-5"><strong>Your 2:00 a.m. Lost Thoughts Now Got an EAR</strong></div>
-                    <div className="text-success my-4 ms-5" style={{ fontSize: "1.4rem" }}>For Anyone, Anywhere, at Anytime.</div>
+                    <div className="text-success mb-4 ms-5" style={{ fontSize: "1.4rem" }}>For Anyone, Anywhere, at Anytime.</div>
                     <button className="join w-25 mx-auto btn btn-success py-1 px-3 ms-5" style={{borderRadius:"40px"}} onClick={register}>Join Now</button>
                 </div>
                 <div className="card2 my-auto col-lg-7 col-md-7 col-sm-12 col-12 text-start" style={{height: "40vh" }}>
@@ -105,7 +105,7 @@ function Home() {
                 <div className="text-dark text-center my-4 mx-4" style={{ fontSize: "1.1rem" }}>An initiative by Brainy Bones, Brainy Ears is an active listening platform where you can vent out anything at any time, at any place.</div>
                 <div className="h4 text-dark text-center my-4 mx-4">Brainy Ears is the active listening platform in India.</div>
             </div>
-            <div className="h4 text-center my-4 mx-4" data-aos={"fade-right"}><strong>Brainy Ears is the </strong><strong className="bg-success text-white text-center px-2 pb-1 border border-success rounded">Safest and Secured</strong><strong> active listening platform in India.</strong></div>
+            <div className="h4 text-center my-4 mx-4" data-aos={"fade-right"}><strong>Brainy Ears is the {"\n"} </strong><strong className="bg-success text-white text-center px-2 pb-1 border border-success rounded" style={{whiteSpace:"nowrap"}}>Safest and Secured</strong><strong> active listening platform in India.</strong></div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto">
                 <div className="h5 text-success text-center my-4 mx-4" data-aos={"fade-right"}>Just think of us as a mirror to your thoughts.</div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto" data-aos={"fade-left"}>

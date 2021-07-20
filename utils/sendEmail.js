@@ -6,13 +6,13 @@ const sendEmail = (options) => {
         port: 587,                                                    
         secure: false,
         auth : {
-            user : process.env.EMAIL,
-            pass : process.env.PASSWORD
+            user :"noreply@brainyybones.com",
+            pass : "Brainyydatabase107"
         },
     })
 
     let mainOptions = {
-        from :  process.env.EMAIL,
+        from :  "noreply@brainyybones.com",
         to : options.to,
         subject : options.subject,
         html : options.text

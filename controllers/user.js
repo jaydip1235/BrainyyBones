@@ -4,9 +4,9 @@ const sendEmail = require("../utils/sendEmail");
 const url = require("url");
 
 exports.register = async (req, res, next) => {
-  try {
 
-    const user = await User.create({
+  try {
+    const user = new User({
       name: req.body.name,
       email: req.body.email,
       phone: req.body.phone,
@@ -14,6 +14,8 @@ exports.register = async (req, res, next) => {
       time: req.body.time,
       issue: req.body.issue,
     });
+
+    await user.save();
     try{
     await sendEmail({
                 to: req.body.email,
@@ -29,11 +31,11 @@ exports.register = async (req, res, next) => {
               `
               });
             }catch(err){
-              return res.status(404).send("fail")
+              return res.status(401).send("fail")
             }
-            res.send(user)
+            res.status(201).send(user)
   } catch (error) {
-    return res.status(404).send("fail")
+    return res.status(401).send("fail")
   }
 }
 
