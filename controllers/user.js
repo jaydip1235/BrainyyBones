@@ -8,7 +8,7 @@ exports.register = async (req, res, next) => {
     let userr = await User.findOne({$or:[{ email : req.body.email}, {phone: req.body.phone}]})
 
     if(userr){
-      res.status(404).send("fail")
+      return res.status(404).send("fail")
     }
     const user = await User.create({
       name: req.body.name,
@@ -33,11 +33,11 @@ exports.register = async (req, res, next) => {
               `
               });
             }catch(err){
-              res.status(404).send("fail")
+              return res.status(404).send("fail")
             }
             res.send(user)
   } catch (error) {
-    res.status(404).send("fail")
+    return res.status(404).send("fail")
   }
 }
 
