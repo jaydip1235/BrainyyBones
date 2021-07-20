@@ -14,7 +14,7 @@ function App() {
       <Route exact path='/date/:name/:email/:phone' component={Dates}/>
       <Route exact path='/register' component={Register}/>
       <Route exact path="/payment-complete" component={PaymentComplete} />
-      <Route component={Error}/>
+      <Route path = "*" component={Error}/>
     </Switch>
   )
 }
