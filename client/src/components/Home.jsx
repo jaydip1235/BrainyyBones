@@ -22,47 +22,46 @@ import Nav from './Nav';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import { useHistory } from 'react-router-dom';
-
+ 
 function Home() {
-
+ 
     const history=useHistory();
-
+ 
     useEffect(() => {
 		AOS.init({
 		  duration : 1000
 		});
 	  }, []);
-
+ 
     const register=()=>{
         console.log("Join")
         history.push('/register');
     }
-
+ 
     return (
         <>
         <Nav/>
         <div className="container-fluid d-flex align-items-center justify-content-center flex-column main-div">
-            <div className="comp1 mt-5" data-aos={"fade-left"}>
-                <div className="card1 my-auto text-center" style={{ width: "400px", height: "300px" }} onClick={()=>{console.log("Card1")}}>
-                    <div className="h3 text-success text-center my-4 mx-5"><strong>Your 2:00 a.m. Lost Thoughts Now Got an EAR</strong></div>
-                    <div className="text-success text-center my-4" style={{ fontSize: "1.2rem" }}>For Anyone, Anywhere, at Anytime.</div>
-                    <button className="join w-50 mx-auto btn btn-success py-1 px-3 " onClick={register}>Join Now</button>
+            <div className="comp1 mt-5 d-flex flex-wrap" data-aos={"fade-left"}>
+                <div className="card1 text-start col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column justify-content-center"  style={{ height: "40vh" }} onClick={()=>{console.log("Card1")}}>
+                    <div className="h3 text-success mb-4 mx-5"><strong>Your 2:00 a.m. Lost Thoughts Now Got an EAR</strong></div>
+                    <div className="text-success my-4 ms-5" style={{ fontSize: "1.4rem" }}>For Anyone, Anywhere, at Anytime.</div>
+                    <button className="join w-25 mx-auto btn btn-success py-1 px-3 ms-5" style={{borderRadius:"40px"}} onClick={register}>Join Now</button>
                 </div>
-                <div className="card2 my-auto ms-5" style={{ width: "80%", height: "96%" }}>
+                <div className="card2 my-auto col-lg-7 col-md-7 col-sm-12 col-12 text-start" style={{height: "40vh" }}>
                     <div className="card3 mx-auto m2-5">
-                        <div className="text-white text-center my-4 mx-4" style={{ fontSize: "1.2rem" }}>We know how it feels to be awake all night, falling prey to overthinking & not able to speak up about it in the morning.</div>
-                        <div className="h3 text-white my-4 mx-5 text-center c2T"><strong>You Are Not Alone. We heard you</strong></div>
-
+                        <div className="h3 text-white mt-4 mx-5 display-4" style={{marginBottom:"0px !important"}}><strong>We heard you.</strong></div>
+                        <div className="h3 text-white mb-4 mx-5 c2T display-4" style={{marginTop:"0px !important"}}><strong> You are not alone.</strong></div>
+                        <div className="text-white my-4 mx-5" style={{ fontSize: "14px" }}>We know how it feels to be awake all night, falling prey to overthinking & not able to speak up about it in the morning.</div>
+ 
                     </div>
                 </div>
             </div>
+            <div className="h4 text-success text-center my-4 mx-4">Our Team of Psychologist Professionals & Students are just a click away. </div>
             <div className="comp2 d-flex flex-wrap justify-content-center align-items-center border text-center" data-aos={"fade-right"}>
-                <Logo link={png1} text="Liberating Mindset" />
-                <Logo link={png15} text="Freedom to your Caged Thoughts" />
-                <Logo link={png16} text="Moving Forward Approach" />
                 <Logo link={png2} text="Stress-relieving Attitude" />
+                <Logo link={png15} text="Freedom to your Caged Thoughts" />
                 <Logo link={png3} text="A sense of Security" />
-                <Logo link={png4} />
             </div>
             <div className="comp3 d-flex flex-column align-items-center justify-content-center" data-aos={"fade-left"}>
                 <div className="h4 text-success text-center my-4">Our Team Of Psychologist Professionals & Students.</div>
@@ -71,12 +70,7 @@ function Home() {
                 <div className="text-success text-center my-4" style={{ fontSize: "1.2rem" }}>If you want to vent without worrying about being the talk of the town.Then, we are your safety net.</div>
                 <div className="h2 text-success text-center my-4">Take The First Step. Walk The Right Way.</div>
             </div>
-            <div className="comp4 d-flex flex-wrap align-items-center justify-content-center border" data-aos={"fade-right"}>
-                <div className="col-lg-4 col-md-4 col-sm-8 col-10 border">
-                    <p className="text-center w-75 mx-auto my-4 h6" style={{ color: "#09371F" }}>We just need you to trust us and follow these steps to register for this platform:</p>
-                    <div className="bg-dark mx-auto my-4" style={{ height: "160px", width: "260px" }}></div>
-                    <div className="h3 text-success text-center my-4">Click on the register button</div>
-                </div>
+            <div className="comp4 d-flex flex-wrap align-items-center justify-content-center border w-50" data-aos={"fade-right"}>
                 <div className="col-lg-5 col-md-5 col-sm-8 col-10 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto" data-aos={"fade-left"}>
                     <div className="col-lg-4 col-md-4 col-sm-4 col-4 my-4">
                         <img src={png5} alt="logo" className="ms-0" />
@@ -107,13 +101,13 @@ function Home() {
                 <img src={png17} alt="logo" style={{width:"60vw"}}/>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto" data-aos={"fade-right"}>
-                
+ 
                 <div className="text-dark text-center my-4 mx-4" style={{ fontSize: "1.1rem" }}>An initiative by Brainy Bones, Brainy Ears is an active listening platform where you can vent out anything at any time, at any place.</div>
-                <div className="h4 text-dark text-center my-4">Brainy Ears is the active listening platform in India.</div>
+                <div className="h4 text-dark text-center my-4 mx-4">Brainy Ears is the active listening platform in India.</div>
             </div>
             <div className="h4 text-center my-4 mx-4" data-aos={"fade-right"}><strong>Brainy Ears is the </strong><strong className="bg-success text-white text-center px-2 pb-1 border border-success rounded">Safest and Secured</strong><strong> active listening platform in India.</strong></div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto">
-                <div className="h5 text-success text-center my-4" data-aos={"fade-right"}>Just think of us as a mirror to your thoughts.</div>
+                <div className="h5 text-success text-center my-4 mx-4" data-aos={"fade-right"}>Just think of us as a mirror to your thoughts.</div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto" data-aos={"fade-left"}>
                     <div className="col-lg-4 col-md-6 col-sm-12 col-12 d-flex flex-column align-items-center justify-content-center mx-auto my-4">
                         <img src={png11} alt="logo" style={{ width: "8rem" }} />
@@ -130,19 +124,15 @@ function Home() {
                 </div>
             </div>
             <div className="comp6 d-flex flex-wrap justify-content-center border bg-success" data-aos={"fade-right"}>
-                <div className="col-lg-5 col-md-5 col-sm-8 col-10 d-flex flex-column align-items-center justify-content-center mx-auto h-50 c1">
+                <div className="col-lg-5 col-md-5 col-sm-8 col-10 d-flex flex-column align-items-center justify-content-center mx-auto h-100 c1">
                     <img src={png14} alt="logo" style={{ width: "8rem" }} className="my-4" />
                     <p className="text-center text-white w-75 mx-auto my-4 h6">According to Maslow, a great American psychologist,  the first and foremost need of a human is - ‘Security & Safety.’</p>
-                </div>
-                <div className="col-lg-5 col-md-5 col-sm-8 col-10 border h-75 bg-white text-center c2">
-                    <p className="text-center text-success w-75 mx-auto my-4 h5">You’re already carrying baggage from your past and complexities. Let us take your load off.</p>
-                    <div className="bg-dark mx-auto my-4" style={{ height: "160px", width: "260px" }}></div>
-                    <button className="btn btn-success w-75 py-2 mt-4" style={{ fontSize: "1.4rem" }} onClick={register}>Register for Brainy Ears</button>
+                    <p className="text-center text-white w-100 mx-auto my-4 h3">You’re already carrying baggage from your past and complexities. Let us take your load off.</p>
                 </div>
             </div>
         </div>
         </>
     )
 }
-
+ 
 export default Home
