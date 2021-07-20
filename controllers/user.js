@@ -42,9 +42,9 @@ exports.register = async (req, res, next) => {
 // exports.payment = async (req, res, next) => {
 
 
-//   const API_KEY = "test_1fe393a860672c4d70a6ff841a5";
+//   const API_KEY = "test_1feasfasf";
 
-//   const AUTH_KEY = "test_288dd745089966bfcc9960a39a0";
+//   const AUTH_KEY = "test_288asf";
 
 //   Insta.setKeys(API_KEY, AUTH_KEY);
 
