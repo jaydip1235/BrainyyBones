@@ -46,9 +46,6 @@ function Dates() {
           body: JSON.stringify({name,email,phone,date:dateString, time,issue}),
         })
         .then((response) =>{
-          if(response.status===404){
-            history.push('/error')
-          }
           console.log(response.data)
           history.push('/payment-complete')
         }

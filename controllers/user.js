@@ -8,7 +8,7 @@ exports.register = async (req, res, next) => {
     let userr = await User.findOne({$or:[{ email : req.body.email}, {phone: req.body.phone}]})
 
     if(userr){
-      res.sendStatus(404)
+      res.redirect("https://brainyears.herokuapp.com/error")
     }
     const user = await User.create({
       name: req.body.name,
