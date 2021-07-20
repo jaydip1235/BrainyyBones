@@ -5,6 +5,11 @@ const url = require("url");
 
 exports.register = async (req, res, next) => {
   try {
+    let user = await User.findOne({$or:[{ email : req.body.email}, {phone: req.body.phone}]})
+
+    if(user){
+      res.redirect("https://brainyears.herokuapp.com/error")
+    }
     const user = await User.create({
       name: req.body.name,
       email: req.body.email,
