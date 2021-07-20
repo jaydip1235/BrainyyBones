@@ -1,6 +1,8 @@
 *{
     margin:0px !important;
     padding: 0px !important;
+    /* overflow-x: hidden !important; */
+
 }
 body{
     overflow-x: hidden;
@@ -14,12 +16,14 @@ body{
     display: flex;
     flex-wrap: nowrap;
     z-index: 1;
+    overflow-x: hidden !important;
 
 }
 .card1{
     background: #FFE6E6;
     z-index: 6;
     overflow: visible;
+    overflow-x: hidden !important;
 }
 .card2{
     background: linear-gradient(to bottom, #ffffff00 30%, #000000 100%);
@@ -31,50 +35,62 @@ body{
     justify-content: center;
     position:absolute;
     right:0;
+    overflow-x: hidden !important;
 }
 .card3{
     position: absolute;
     bottom:0;
+    overflow-x: hidden !important;
 }
 .main-div{
     height:fit-content;
     width:100vw;
+    overflow-x: hidden !important;
 }
 .comp2{
     background-color: #E1F3FC;
     height: fit-content;
     width: 100%;
+    overflow-x: hidden !important;
 }
 .comp3{
     height:fit-content;
     width: 100%;
+    overflow-x: hidden !important;
 }
 .comp4{
     height:fit-content;
-    width: 80%;
+    width: 80%; 
+    overflow-x: hidden !important;
+
 }
 .comp5{
     height:fit-content;
     width: 100%;
+    overflow-x: hidden !important;
 }
 .comp6{
     height:80vh;
     width: 100%;
     min-height: fit-content;
+    overflow-x: hidden !important;
 }
 
 @media only screen and (max-width: 600px) {
     .card2{
         min-height: 100%;
         min-width: 100%;
+        overflow-x: hidden !important;
     }
     .comp1{
         display: flex;
         flex-direction: column;
+        overflow-x: hidden !important;
     }
     .card1{
         margin-top: 30px !important;
         width: 100% !important;
+        overflow-x: hidden !important;
     }
   }
   
