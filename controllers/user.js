@@ -5,11 +5,7 @@ const url = require("url");
 
 exports.register = async (req, res, next) => {
   try {
-    let userr = await User.findOne({$or:[{ email : req.body.email}, {phone: req.body.phone}]})
 
-    if(userr){
-      return res.status(404).send("fail")
-    }
     const user = await User.create({
       name: req.body.name,
       email: req.body.email,
@@ -23,10 +19,10 @@ exports.register = async (req, res, next) => {
                 to: req.body.email,
                 subject: "Confirmation from Brainybones",
                 text:`
-                <h3>Hey ${user.name}</h3>
+                <h2>Hey ${user.name},</h2>
                 <br>
                 <br>
-                <p style="font-size:20px">Thank you for choosing Brainyy Ears. This email is a confirmation of your Active Listening session with a Brainyy Ears Volunteer. Your session booked at ${user.time.substring(0,8)} on ${user.date} for 15 minutes. See you at the session.</p>
+                <p style="font-size:20px">Thank you for choosing Brainy Ears. This email is a confirmation of your Active Listening session with a Brainy Ears Volunteer. Your session booked at ${user.time.substring(0,8)} on ${user.date} for 15 minutes. See you at the session.</p>
                 <br>
                 <h2>Regards,</h2>
                 <h2>Team BrainyyBones</h2>

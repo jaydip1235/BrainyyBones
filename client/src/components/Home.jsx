@@ -42,16 +42,16 @@ function Home() {
         <>
         <Nav/>
         <div className="container-fluid d-flex align-items-center justify-content-center flex-column main-div">
-            <div className="comp1 mt-5" data-aos={"fade-up"}>
-                <div className="card1 my-auto text-start" style={{ width: "400px", height: "300px" }} onClick={()=>{console.log("Card1")}}>
-                    <div className="h3 text-success my-4 mx-5"><strong>Your 2:00 a.m. Lost Thoughts Now Got an EAR</strong></div>
+            <div className="comp1 mt-5" data-aos={"fade-left"}>
+                <div className="card1 my-auto text-center" style={{ width: "400px", height: "300px" }} onClick={()=>{console.log("Card1")}}>
+                    <div className="h3 text-success text-center my-4 mx-5"><strong>Your 2:00 a.m. Lost Thoughts Now Got an EAR</strong></div>
                     <div className="text-success text-center my-4" style={{ fontSize: "1.2rem" }}>For Anyone, Anywhere, at Anytime.</div>
-                    <button className="join btn btn-success ms-5 py-1 px-3" onClick={register}>Join Now</button>
+                    <button className="join w-50 mx-auto btn btn-success py-1 px-3 " onClick={register}>Join Now</button>
                 </div>
                 <div className="card2 my-auto ms-5" style={{ width: "80%", height: "96%" }}>
                     <div className="card3 mx-auto m2-5">
-                        <div className="text-white text-start my-4 mx-4" style={{ fontSize: "1.2rem" }}>We know how it feels to be awake all night, falling prey to overthinking & not able to speak up about it in the morning.</div>
-                        <div className="h3 text-white my-4 mx-5 text-center"><strong>You Are Not Alone. We heard you</strong></div>
+                        <div className="text-white text-center my-4 mx-4" style={{ fontSize: "1.2rem" }}>We know how it feels to be awake all night, falling prey to overthinking & not able to speak up about it in the morning.</div>
+                        <div className="h3 text-white my-4 mx-5 text-center c2T"><strong>You Are Not Alone. We heard you</strong></div>
 
                     </div>
                 </div>
@@ -66,7 +66,7 @@ function Home() {
             </div>
             <div className="comp3 d-flex flex-column align-items-center justify-content-center" data-aos={"fade-left"}>
                 <div className="h4 text-success text-center my-4">Our Team Of Psychologist Professionals & Students.</div>
-                <button className="btn btn-success w-25 py-2 my-4 mx-auto" style={{ fontSize: "1.4rem" }} onClick={register}>Register for Brainy Ears</button>
+                <button className="btn btn-success w-50 py-2 my-4 mx-auto" style={{ fontSize: "1.4rem" }} onClick={register}>Register for Brainy Ears</button>
                 <div className="h3 text-success text-center my-4">Just One Click Away.</div>
                 <div className="text-success text-center my-4" style={{ fontSize: "1.2rem" }}>If you want to vent without worrying about being the talk of the town.Then, we are your safety net.</div>
                 <div className="h2 text-success text-center my-4">Take The First Step. Walk The Right Way.</div>
@@ -102,16 +102,16 @@ function Home() {
                 </div>
             </div>
             <div className="comp5 d-flex flex-column align-items-center justify-content-center" data-aos={"fade-left"}>
-                <button className="btn btn-success w-25 py-2 my-5" style={{ fontSize: "1.4rem" }} onClick={register}>Register for Brainy Ears</button>
-                <div className="h4 text-dark text-center my-4">Brainy Ears is Your Light at The End of The Tunnel.</div>
+                <button className="btn btn-success w-50 py-2 my-5" style={{ fontSize: "1.4rem" }} onClick={register}>Register for Brainy Ears</button>
+                <div className="h4 text-dark text-center my-4 mx-4">Brainy Ears is Your Light at The End of The Tunnel.</div>
                 <img src={png17} alt="logo" style={{width:"60vw"}}/>
             </div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto" data-aos={"fade-right"}>
                 
-                <div className="text-dark text-center my-4" style={{ fontSize: "1.1rem" }}>An initiative by Brainy Bones, Brainy Ears is an active listening platform where you can vent out anything at any time, at any place.</div>
+                <div className="text-dark text-center my-4 mx-4" style={{ fontSize: "1.1rem" }}>An initiative by Brainy Bones, Brainy Ears is an active listening platform where you can vent out anything at any time, at any place.</div>
                 <div className="h4 text-dark text-center my-4">Brainy Ears is the active listening platform in India.</div>
             </div>
-            <div className="h4 text-center my-4" data-aos={"fade-right"}><strong>Brainy Ears is the </strong><strong className="bg-success text-white text-center px-2 pb-1 border border-success rounded">Safest and Secured</strong><strong> active listening platform in India.</strong></div>
+            <div className="h4 text-center my-4 mx-4" data-aos={"fade-right"}><strong>Brainy Ears is the </strong><strong className="bg-success text-white text-center px-2 pb-1 border border-success rounded">Safest and Secured</strong><strong> active listening platform in India.</strong></div>
             <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto">
                 <div className="h5 text-success text-center my-4" data-aos={"fade-right"}>Just think of us as a mirror to your thoughts.</div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row flex-wrap align-items-center justify-content-center mx-auto" data-aos={"fade-left"}>
@@ -130,11 +130,11 @@ function Home() {
                 </div>
             </div>
             <div className="comp6 d-flex flex-wrap justify-content-center border bg-success" data-aos={"fade-right"}>
-                <div className="col-lg-5 col-md-5 col-sm-8 col-10 d-flex flex-column align-items-center justify-content-center mx-auto h-75">
+                <div className="col-lg-5 col-md-5 col-sm-8 col-10 d-flex flex-column align-items-center justify-content-center mx-auto h-50 c1">
                     <img src={png14} alt="logo" style={{ width: "8rem" }} className="my-4" />
                     <p className="text-center text-white w-75 mx-auto my-4 h6">According to Maslow, a great American psychologist,  the first and foremost need of a human is - ‘Security & Safety.’</p>
                 </div>
-                <div className="col-lg-5 col-md-5 col-sm-8 col-10 border h-75 bg-white text-center">
+                <div className="col-lg-5 col-md-5 col-sm-8 col-10 border h-75 bg-white text-center c2">
                     <p className="text-center text-success w-75 mx-auto my-4 h5">You’re already carrying baggage from your past and complexities. Let us take your load off.</p>
                     <div className="bg-dark mx-auto my-4" style={{ height: "160px", width: "260px" }}></div>
                     <button className="btn btn-success w-75 py-2 mt-4" style={{ fontSize: "1.4rem" }} onClick={register}>Register for Brainy Ears</button>

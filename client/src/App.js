@@ -5,7 +5,7 @@ import Dates from './components/Dates';
 import Register from './components/Register';
 import PaymentComplete from './components/PaymentComplete';
 import Error from './components/Error';
-
+import './App.css'
 
 function App() {
   return (
